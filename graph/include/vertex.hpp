@@ -10,8 +10,8 @@ class Vertex {
             public:
                 //Constructors
                 EdgeNode ();
-                EdgeNode (EdgeNode*);
-                EdgeNode (Vertex<T>*, const int&);
+                EdgeNode (const EdgeNode&);
+                EdgeNode (Vertex<T>*, const int&, EdgeNode*);
                 //Getters and setters
                 //Setters
                 void setNxtNode (EdgeNode*);
@@ -29,3 +29,14 @@ class Vertex {
     private:
 
 };
+//EdgeNode method implementations
+
+//Constructor
+template <class T>
+Vertex<T>::EdgeNode::EdgeNode (): nxtNode(nullptr), vertex(nullptr), weight(0)  {}
+
+template <class T>
+Vertex<T>::EdgeNode::EdgeNode (const EdgeNode& node): nxtNode(node.nxtNode), vertex(node.vertex), weight(node.weight) {} 
+
+template <class T>
+Vertex<T>::EdgeNode::EdgeNode (Vertex<T>* vertex, const int& weight, EdgeNode* node): nxtNode(node), vertex(vertex), weight(weight) {}
