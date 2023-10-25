@@ -1,13 +1,11 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/tree_binary.dir/tree_binary/src/GUI.cpp.obj"
-  "CMakeFiles/tree_binary.dir/tree_binary/src/GUI.cpp.obj.d"
-  "CMakeFiles/tree_binary.dir/tree_binary/src/main.cpp.obj"
-  "CMakeFiles/tree_binary.dir/tree_binary/src/main.cpp.obj.d"
-  "CMakeFiles/tree_binary.dir/tree_binary/src/song.cpp.obj"
-  "CMakeFiles/tree_binary.dir/tree_binary/src/song.cpp.obj.d"
-  "libtree_binary.dll.a"
-  "tree_binary.exe"
-  "tree_binary.exe.manifest"
+  "CMakeFiles/tree_binary.dir/tree_binary/src/GUI.cpp.o"
+  "CMakeFiles/tree_binary.dir/tree_binary/src/GUI.cpp.o.d"
+  "CMakeFiles/tree_binary.dir/tree_binary/src/main.cpp.o"
+  "CMakeFiles/tree_binary.dir/tree_binary/src/main.cpp.o.d"
+  "CMakeFiles/tree_binary.dir/tree_binary/src/song.cpp.o"
+  "CMakeFiles/tree_binary.dir/tree_binary/src/song.cpp.o.d"
+  "tree_binary"
   "tree_binary.pdb"
 )
 

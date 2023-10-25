@@ -1,13 +1,11 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/gui.cpp.obj"
-  "CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/gui.cpp.obj.d"
-  "CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/main.cpp.obj"
-  "CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/main.cpp.obj.d"
-  "CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/song.cpp.obj"
-  "CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/song.cpp.obj.d"
-  "libsimply_linked_lists.dll.a"
-  "simply_linked_lists.exe"
-  "simply_linked_lists.exe.manifest"
+  "CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/gui.cpp.o"
+  "CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/gui.cpp.o.d"
+  "CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/main.cpp.o"
+  "CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/main.cpp.o.d"
+  "CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/song.cpp.o"
+  "CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/song.cpp.o.d"
+  "simply_linked_lists"
   "simply_linked_lists.pdb"
 )
 

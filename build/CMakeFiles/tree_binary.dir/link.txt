@@ -1,3 +1,1 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\tree_binary.dir/objects.a
-C:\mingw\bin\ar.exe qc CMakeFiles\tree_binary.dir/objects.a @CMakeFiles\tree_binary.dir\objects1.rsp
-C:\mingw\bin\c++.exe -Wl,--whole-archive CMakeFiles\tree_binary.dir/objects.a -Wl,--no-whole-archive -o tree_binary.exe -Wl,--out-implib,libtree_binary.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\tree_binary.dir\linklibs.rsp
+/usr/bin/c++ CMakeFiles/tree_binary.dir/tree_binary/src/GUI.cpp.o CMakeFiles/tree_binary.dir/tree_binary/src/main.cpp.o CMakeFiles/tree_binary.dir/tree_binary/src/song.cpp.o -o tree_binary 

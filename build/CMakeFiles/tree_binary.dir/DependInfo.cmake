@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/damia/OneDrive/Escritorio/Universidad/6to semestre/Estructuras de Datos II/archivos/tree_binary/src/GUI.cpp" "CMakeFiles/tree_binary.dir/tree_binary/src/GUI.cpp.obj" "gcc" "CMakeFiles/tree_binary.dir/tree_binary/src/GUI.cpp.obj.d"
-  "C:/Users/damia/OneDrive/Escritorio/Universidad/6to semestre/Estructuras de Datos II/archivos/tree_binary/src/main.cpp" "CMakeFiles/tree_binary.dir/tree_binary/src/main.cpp.obj" "gcc" "CMakeFiles/tree_binary.dir/tree_binary/src/main.cpp.obj.d"
-  "C:/Users/damia/OneDrive/Escritorio/Universidad/6to semestre/Estructuras de Datos II/archivos/tree_binary/src/song.cpp" "CMakeFiles/tree_binary.dir/tree_binary/src/song.cpp.obj" "gcc" "CMakeFiles/tree_binary.dir/tree_binary/src/song.cpp.obj.d"
+  "/home/damian/Desktop/6to/EDD/archivos/tree_binary/src/GUI.cpp" "CMakeFiles/tree_binary.dir/tree_binary/src/GUI.cpp.o" "gcc" "CMakeFiles/tree_binary.dir/tree_binary/src/GUI.cpp.o.d"
+  "/home/damian/Desktop/6to/EDD/archivos/tree_binary/src/main.cpp" "CMakeFiles/tree_binary.dir/tree_binary/src/main.cpp.o" "gcc" "CMakeFiles/tree_binary.dir/tree_binary/src/main.cpp.o.d"
+  "/home/damian/Desktop/6to/EDD/archivos/tree_binary/src/song.cpp" "CMakeFiles/tree_binary.dir/tree_binary/src/song.cpp.o" "gcc" "CMakeFiles/tree_binary.dir/tree_binary/src/song.cpp.o.d"
   )
 
 # Targets to which this target links.

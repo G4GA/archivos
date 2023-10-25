@@ -1,5 +1,5 @@
-C:/Users/damia/OneDrive/Escritorio/Universidad/6to semestre/Estructuras de Datos II/archivos/build/CMakeFiles/simply_linked_lists.dir
-C:/Users/damia/OneDrive/Escritorio/Universidad/6to semestre/Estructuras de Datos II/archivos/build/CMakeFiles/tree_binary.dir
-C:/Users/damia/OneDrive/Escritorio/Universidad/6to semestre/Estructuras de Datos II/archivos/build/CMakeFiles/graph.dir
-C:/Users/damia/OneDrive/Escritorio/Universidad/6to semestre/Estructuras de Datos II/archivos/build/CMakeFiles/edit_cache.dir
-C:/Users/damia/OneDrive/Escritorio/Universidad/6to semestre/Estructuras de Datos II/archivos/build/CMakeFiles/rebuild_cache.dir
+/home/damian/Desktop/6to/EDD/archivos/build/CMakeFiles/simply_linked_lists.dir
+/home/damian/Desktop/6to/EDD/archivos/build/CMakeFiles/tree_binary.dir
+/home/damian/Desktop/6to/EDD/archivos/build/CMakeFiles/graph.dir
+/home/damian/Desktop/6to/EDD/archivos/build/CMakeFiles/edit_cache.dir
+/home/damian/Desktop/6to/EDD/archivos/build/CMakeFiles/rebuild_cache.dir
