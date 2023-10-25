@@ -6,10 +6,6 @@
 template <class T>
 class Vertex {
     public:
-        //Constructors
-        Vertex ();
-        Vertex (const std::string&, const T&);
-        //Getters and setters
         class EdgeNode {
             public:
                 //Constructors
@@ -57,9 +53,24 @@ class Vertex {
 
                 bool isValidPos (EdgeNode*);
         };
+        //Constructors
+        Vertex ();
+        Vertex (const std::string&, const T&);
+        //Getters and setters
+        void setNextVtx (Vertex<T>*);
+        std::string setName (const std::string&);
+        void setData (const T& data);
+        //Getters
+        Vertex<T>* getNextVtx () const;
+        std::string getName () const;
+        T getData ();
+        void addConnection (Vertex<T>*,const size_t& weight);
+        void deleteConenction (EdgeNode*);
+        EdgeNode* findConnection (Vertex<T>*);
     private:
     //Attributes
     Vertex<T>* nextVtx;
+    std::string name;
     EdgeList edges;
     T* data;
     class Exception : public std::exception{
@@ -210,8 +221,15 @@ typename Vertex<T>::EdgeNode* Vertex<T>::EdgeList::getNextPos (EdgeNode* edgeNod
 
 //Pending
 template <class T>
-typename Vertex<T>::EdgeNode* Vertex<T>::EdgeList::findByName (const std::string&) const {
-
+typename Vertex<T>::EdgeNode* Vertex<T>::EdgeList::findByName (const std::string& name) const {
+    EdgeNode* returnNode = header;
+    while (returnNode != nullptr) {
+        if (returnNode -> getVertex() -> getName() == name){
+            return returnNode;
+        }
+        returnNode = returnNode -> getNxtNode();
+    }
+    return returnNode;
 }
 
 template <class T>
