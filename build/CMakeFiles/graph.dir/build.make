@@ -73,43 +73,43 @@ CMakeFiles/graph.dir/graph/src/GUI.cpp.o: CMakeFiles/graph.dir/flags.make
 CMakeFiles/graph.dir/graph/src/GUI.cpp.o: ../graph/src/GUI.cpp
 CMakeFiles/graph.dir/graph/src/GUI.cpp.o: CMakeFiles/graph.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damian/Desktop/6to/EDD/archivos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/graph.dir/graph/src/GUI.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graph.dir/graph/src/GUI.cpp.o -MF CMakeFiles/graph.dir/graph/src/GUI.cpp.o.d -o CMakeFiles/graph.dir/graph/src/GUI.cpp.o -c /home/damian/Desktop/6to/EDD/archivos/graph/src/GUI.cpp
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graph.dir/graph/src/GUI.cpp.o -MF CMakeFiles/graph.dir/graph/src/GUI.cpp.o.d -o CMakeFiles/graph.dir/graph/src/GUI.cpp.o -c /home/damian/Desktop/6to/EDD/archivos/graph/src/GUI.cpp
 
 CMakeFiles/graph.dir/graph/src/GUI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graph.dir/graph/src/GUI.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/damian/Desktop/6to/EDD/archivos/graph/src/GUI.cpp > CMakeFiles/graph.dir/graph/src/GUI.cpp.i
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/damian/Desktop/6to/EDD/archivos/graph/src/GUI.cpp > CMakeFiles/graph.dir/graph/src/GUI.cpp.i
 
 CMakeFiles/graph.dir/graph/src/GUI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graph.dir/graph/src/GUI.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/damian/Desktop/6to/EDD/archivos/graph/src/GUI.cpp -o CMakeFiles/graph.dir/graph/src/GUI.cpp.s
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/damian/Desktop/6to/EDD/archivos/graph/src/GUI.cpp -o CMakeFiles/graph.dir/graph/src/GUI.cpp.s
 
 CMakeFiles/graph.dir/graph/src/main.cpp.o: CMakeFiles/graph.dir/flags.make
 CMakeFiles/graph.dir/graph/src/main.cpp.o: ../graph/src/main.cpp
 CMakeFiles/graph.dir/graph/src/main.cpp.o: CMakeFiles/graph.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damian/Desktop/6to/EDD/archivos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/graph.dir/graph/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graph.dir/graph/src/main.cpp.o -MF CMakeFiles/graph.dir/graph/src/main.cpp.o.d -o CMakeFiles/graph.dir/graph/src/main.cpp.o -c /home/damian/Desktop/6to/EDD/archivos/graph/src/main.cpp
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graph.dir/graph/src/main.cpp.o -MF CMakeFiles/graph.dir/graph/src/main.cpp.o.d -o CMakeFiles/graph.dir/graph/src/main.cpp.o -c /home/damian/Desktop/6to/EDD/archivos/graph/src/main.cpp
 
 CMakeFiles/graph.dir/graph/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graph.dir/graph/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/damian/Desktop/6to/EDD/archivos/graph/src/main.cpp > CMakeFiles/graph.dir/graph/src/main.cpp.i
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/damian/Desktop/6to/EDD/archivos/graph/src/main.cpp > CMakeFiles/graph.dir/graph/src/main.cpp.i
 
 CMakeFiles/graph.dir/graph/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graph.dir/graph/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/damian/Desktop/6to/EDD/archivos/graph/src/main.cpp -o CMakeFiles/graph.dir/graph/src/main.cpp.s
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/damian/Desktop/6to/EDD/archivos/graph/src/main.cpp -o CMakeFiles/graph.dir/graph/src/main.cpp.s
 
 CMakeFiles/graph.dir/graph/src/song.cpp.o: CMakeFiles/graph.dir/flags.make
 CMakeFiles/graph.dir/graph/src/song.cpp.o: ../graph/src/song.cpp
 CMakeFiles/graph.dir/graph/src/song.cpp.o: CMakeFiles/graph.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damian/Desktop/6to/EDD/archivos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/graph.dir/graph/src/song.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graph.dir/graph/src/song.cpp.o -MF CMakeFiles/graph.dir/graph/src/song.cpp.o.d -o CMakeFiles/graph.dir/graph/src/song.cpp.o -c /home/damian/Desktop/6to/EDD/archivos/graph/src/song.cpp
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graph.dir/graph/src/song.cpp.o -MF CMakeFiles/graph.dir/graph/src/song.cpp.o.d -o CMakeFiles/graph.dir/graph/src/song.cpp.o -c /home/damian/Desktop/6to/EDD/archivos/graph/src/song.cpp
 
 CMakeFiles/graph.dir/graph/src/song.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graph.dir/graph/src/song.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/damian/Desktop/6to/EDD/archivos/graph/src/song.cpp > CMakeFiles/graph.dir/graph/src/song.cpp.i
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/damian/Desktop/6to/EDD/archivos/graph/src/song.cpp > CMakeFiles/graph.dir/graph/src/song.cpp.i
 
 CMakeFiles/graph.dir/graph/src/song.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graph.dir/graph/src/song.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/damian/Desktop/6to/EDD/archivos/graph/src/song.cpp -o CMakeFiles/graph.dir/graph/src/song.cpp.s
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/damian/Desktop/6to/EDD/archivos/graph/src/song.cpp -o CMakeFiles/graph.dir/graph/src/song.cpp.s
 
 # Object files for target graph
 graph_OBJECTS = \

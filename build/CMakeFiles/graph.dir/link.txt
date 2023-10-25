@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/graph.dir/graph/src/GUI.cpp.o CMakeFiles/graph.dir/graph/src/main.cpp.o CMakeFiles/graph.dir/graph/src/song.cpp.o -o graph 
+/usr/bin/g++-13 CMakeFiles/graph.dir/graph/src/GUI.cpp.o CMakeFiles/graph.dir/graph/src/main.cpp.o CMakeFiles/graph.dir/graph/src/song.cpp.o -o graph 

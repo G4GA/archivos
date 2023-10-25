@@ -73,43 +73,43 @@ CMakeFiles/tree_binary.dir/tree_binary/src/GUI.cpp.o: CMakeFiles/tree_binary.dir
 CMakeFiles/tree_binary.dir/tree_binary/src/GUI.cpp.o: ../tree_binary/src/GUI.cpp
 CMakeFiles/tree_binary.dir/tree_binary/src/GUI.cpp.o: CMakeFiles/tree_binary.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damian/Desktop/6to/EDD/archivos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tree_binary.dir/tree_binary/src/GUI.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tree_binary.dir/tree_binary/src/GUI.cpp.o -MF CMakeFiles/tree_binary.dir/tree_binary/src/GUI.cpp.o.d -o CMakeFiles/tree_binary.dir/tree_binary/src/GUI.cpp.o -c /home/damian/Desktop/6to/EDD/archivos/tree_binary/src/GUI.cpp
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tree_binary.dir/tree_binary/src/GUI.cpp.o -MF CMakeFiles/tree_binary.dir/tree_binary/src/GUI.cpp.o.d -o CMakeFiles/tree_binary.dir/tree_binary/src/GUI.cpp.o -c /home/damian/Desktop/6to/EDD/archivos/tree_binary/src/GUI.cpp
 
 CMakeFiles/tree_binary.dir/tree_binary/src/GUI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tree_binary.dir/tree_binary/src/GUI.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/damian/Desktop/6to/EDD/archivos/tree_binary/src/GUI.cpp > CMakeFiles/tree_binary.dir/tree_binary/src/GUI.cpp.i
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/damian/Desktop/6to/EDD/archivos/tree_binary/src/GUI.cpp > CMakeFiles/tree_binary.dir/tree_binary/src/GUI.cpp.i
 
 CMakeFiles/tree_binary.dir/tree_binary/src/GUI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tree_binary.dir/tree_binary/src/GUI.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/damian/Desktop/6to/EDD/archivos/tree_binary/src/GUI.cpp -o CMakeFiles/tree_binary.dir/tree_binary/src/GUI.cpp.s
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/damian/Desktop/6to/EDD/archivos/tree_binary/src/GUI.cpp -o CMakeFiles/tree_binary.dir/tree_binary/src/GUI.cpp.s
 
 CMakeFiles/tree_binary.dir/tree_binary/src/main.cpp.o: CMakeFiles/tree_binary.dir/flags.make
 CMakeFiles/tree_binary.dir/tree_binary/src/main.cpp.o: ../tree_binary/src/main.cpp
 CMakeFiles/tree_binary.dir/tree_binary/src/main.cpp.o: CMakeFiles/tree_binary.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damian/Desktop/6to/EDD/archivos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tree_binary.dir/tree_binary/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tree_binary.dir/tree_binary/src/main.cpp.o -MF CMakeFiles/tree_binary.dir/tree_binary/src/main.cpp.o.d -o CMakeFiles/tree_binary.dir/tree_binary/src/main.cpp.o -c /home/damian/Desktop/6to/EDD/archivos/tree_binary/src/main.cpp
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tree_binary.dir/tree_binary/src/main.cpp.o -MF CMakeFiles/tree_binary.dir/tree_binary/src/main.cpp.o.d -o CMakeFiles/tree_binary.dir/tree_binary/src/main.cpp.o -c /home/damian/Desktop/6to/EDD/archivos/tree_binary/src/main.cpp
 
 CMakeFiles/tree_binary.dir/tree_binary/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tree_binary.dir/tree_binary/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/damian/Desktop/6to/EDD/archivos/tree_binary/src/main.cpp > CMakeFiles/tree_binary.dir/tree_binary/src/main.cpp.i
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/damian/Desktop/6to/EDD/archivos/tree_binary/src/main.cpp > CMakeFiles/tree_binary.dir/tree_binary/src/main.cpp.i
 
 CMakeFiles/tree_binary.dir/tree_binary/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tree_binary.dir/tree_binary/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/damian/Desktop/6to/EDD/archivos/tree_binary/src/main.cpp -o CMakeFiles/tree_binary.dir/tree_binary/src/main.cpp.s
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/damian/Desktop/6to/EDD/archivos/tree_binary/src/main.cpp -o CMakeFiles/tree_binary.dir/tree_binary/src/main.cpp.s
 
 CMakeFiles/tree_binary.dir/tree_binary/src/song.cpp.o: CMakeFiles/tree_binary.dir/flags.make
 CMakeFiles/tree_binary.dir/tree_binary/src/song.cpp.o: ../tree_binary/src/song.cpp
 CMakeFiles/tree_binary.dir/tree_binary/src/song.cpp.o: CMakeFiles/tree_binary.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damian/Desktop/6to/EDD/archivos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tree_binary.dir/tree_binary/src/song.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tree_binary.dir/tree_binary/src/song.cpp.o -MF CMakeFiles/tree_binary.dir/tree_binary/src/song.cpp.o.d -o CMakeFiles/tree_binary.dir/tree_binary/src/song.cpp.o -c /home/damian/Desktop/6to/EDD/archivos/tree_binary/src/song.cpp
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tree_binary.dir/tree_binary/src/song.cpp.o -MF CMakeFiles/tree_binary.dir/tree_binary/src/song.cpp.o.d -o CMakeFiles/tree_binary.dir/tree_binary/src/song.cpp.o -c /home/damian/Desktop/6to/EDD/archivos/tree_binary/src/song.cpp
 
 CMakeFiles/tree_binary.dir/tree_binary/src/song.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tree_binary.dir/tree_binary/src/song.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/damian/Desktop/6to/EDD/archivos/tree_binary/src/song.cpp > CMakeFiles/tree_binary.dir/tree_binary/src/song.cpp.i
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/damian/Desktop/6to/EDD/archivos/tree_binary/src/song.cpp > CMakeFiles/tree_binary.dir/tree_binary/src/song.cpp.i
 
 CMakeFiles/tree_binary.dir/tree_binary/src/song.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tree_binary.dir/tree_binary/src/song.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/damian/Desktop/6to/EDD/archivos/tree_binary/src/song.cpp -o CMakeFiles/tree_binary.dir/tree_binary/src/song.cpp.s
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/damian/Desktop/6to/EDD/archivos/tree_binary/src/song.cpp -o CMakeFiles/tree_binary.dir/tree_binary/src/song.cpp.s
 
 # Object files for target tree_binary
 tree_binary_OBJECTS = \

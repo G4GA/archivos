@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/gui.cpp.o CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/main.cpp.o CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/song.cpp.o -o simply_linked_lists 
+/usr/bin/g++-13 CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/gui.cpp.o CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/main.cpp.o CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/song.cpp.o -o simply_linked_lists 

@@ -73,43 +73,43 @@ CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/gui.cpp.o: CMakeFiles
 CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/gui.cpp.o: ../simply_linked_lists/src/gui.cpp
 CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/gui.cpp.o: CMakeFiles/simply_linked_lists.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damian/Desktop/6to/EDD/archivos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/gui.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/gui.cpp.o -MF CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/gui.cpp.o.d -o CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/gui.cpp.o -c /home/damian/Desktop/6to/EDD/archivos/simply_linked_lists/src/gui.cpp
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/gui.cpp.o -MF CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/gui.cpp.o.d -o CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/gui.cpp.o -c /home/damian/Desktop/6to/EDD/archivos/simply_linked_lists/src/gui.cpp
 
 CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/gui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/gui.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/damian/Desktop/6to/EDD/archivos/simply_linked_lists/src/gui.cpp > CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/gui.cpp.i
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/damian/Desktop/6to/EDD/archivos/simply_linked_lists/src/gui.cpp > CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/gui.cpp.i
 
 CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/gui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/gui.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/damian/Desktop/6to/EDD/archivos/simply_linked_lists/src/gui.cpp -o CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/gui.cpp.s
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/damian/Desktop/6to/EDD/archivos/simply_linked_lists/src/gui.cpp -o CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/gui.cpp.s
 
 CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/main.cpp.o: CMakeFiles/simply_linked_lists.dir/flags.make
 CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/main.cpp.o: ../simply_linked_lists/src/main.cpp
 CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/main.cpp.o: CMakeFiles/simply_linked_lists.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damian/Desktop/6to/EDD/archivos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/main.cpp.o -MF CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/main.cpp.o.d -o CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/main.cpp.o -c /home/damian/Desktop/6to/EDD/archivos/simply_linked_lists/src/main.cpp
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/main.cpp.o -MF CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/main.cpp.o.d -o CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/main.cpp.o -c /home/damian/Desktop/6to/EDD/archivos/simply_linked_lists/src/main.cpp
 
 CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/damian/Desktop/6to/EDD/archivos/simply_linked_lists/src/main.cpp > CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/main.cpp.i
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/damian/Desktop/6to/EDD/archivos/simply_linked_lists/src/main.cpp > CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/main.cpp.i
 
 CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/damian/Desktop/6to/EDD/archivos/simply_linked_lists/src/main.cpp -o CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/main.cpp.s
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/damian/Desktop/6to/EDD/archivos/simply_linked_lists/src/main.cpp -o CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/main.cpp.s
 
 CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/song.cpp.o: CMakeFiles/simply_linked_lists.dir/flags.make
 CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/song.cpp.o: ../simply_linked_lists/src/song.cpp
 CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/song.cpp.o: CMakeFiles/simply_linked_lists.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/damian/Desktop/6to/EDD/archivos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/song.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/song.cpp.o -MF CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/song.cpp.o.d -o CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/song.cpp.o -c /home/damian/Desktop/6to/EDD/archivos/simply_linked_lists/src/song.cpp
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/song.cpp.o -MF CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/song.cpp.o.d -o CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/song.cpp.o -c /home/damian/Desktop/6to/EDD/archivos/simply_linked_lists/src/song.cpp
 
 CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/song.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/song.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/damian/Desktop/6to/EDD/archivos/simply_linked_lists/src/song.cpp > CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/song.cpp.i
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/damian/Desktop/6to/EDD/archivos/simply_linked_lists/src/song.cpp > CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/song.cpp.i
 
 CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/song.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/song.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/damian/Desktop/6to/EDD/archivos/simply_linked_lists/src/song.cpp -o CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/song.cpp.s
+	/usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/damian/Desktop/6to/EDD/archivos/simply_linked_lists/src/song.cpp -o CMakeFiles/simply_linked_lists.dir/simply_linked_lists/src/song.cpp.s
 
 # Object files for target simply_linked_lists
 simply_linked_lists_OBJECTS = \

@@ -1,4 +1,7 @@
 cmake_minimum_required(VERSION 3.22)
+if (UNIX)
+    set(CMAKE_CXX_COMPILER g++-13)
+endif()
 
 project(tareas_noe LANGUAGES CXX)
 
