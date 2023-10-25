@@ -241,7 +241,6 @@ CMakeFiles/graph.dir/graph/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
  /usr/include/c++/13/bits/fstream.tcc \
- /home/damian/Desktop/6to/EDD/archivos/graph/src/../include/vertex.hpp \
  /home/damian/Desktop/6to/EDD/archivos/graph/src/../include/list.hpp \
  /usr/include/c++/13/functional /usr/include/c++/13/unordered_map \
  /usr/include/c++/13/bits/unordered_map.h \
