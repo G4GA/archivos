@@ -9,8 +9,7 @@ class Vertex {
         //Constructors
         Vertex ();
         Vertex (const std::string&, const T&);
-        //
-        //
+        //Getters and setters
         class EdgeNode {
             public:
                 //Constructors
@@ -35,6 +34,8 @@ class Vertex {
             public:
                 //Constructors
                 EdgeList ();
+                //Destructor
+                ~EdgeList ();
                 //Methods for the list
                 bool isEmpty () const;
 
@@ -123,6 +124,11 @@ size_t Vertex<T>::EdgeNode::getWeight () const {
 template <class T>
 Vertex<T>::EdgeList::EdgeList (): header(nullptr) {}
 
+template<class T>
+Vertex<T>::EdgeList::~EdgeList () {
+    clearList();
+}
+
 template <class T> 
 bool Vertex<T>::EdgeList::isEmpty () const {
     return header == nullptr;
@@ -206,4 +212,11 @@ typename Vertex<T>::EdgeNode* Vertex<T>::EdgeList::getNextPos (EdgeNode* edgeNod
 template <class T>
 typename Vertex<T>::EdgeNode* Vertex<T>::EdgeList::findByName (const std::string&) const {
 
+}
+
+template <class T>
+void Vertex<T>::EdgeList::clearList () {
+    while (!isEmpty()) {
+        deleteData (header);
+    }
 }
