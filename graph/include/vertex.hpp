@@ -56,16 +56,17 @@ class Vertex {
         //Constructors
         Vertex ();
         Vertex (const std::string&, const T&);
+        ~Vertex ();
         //Getters and setters
         void setNextVtx (Vertex<T>*);
-        std::string setName (const std::string&);
+        void setName (const std::string&);
         void setData (const T& data);
         //Getters
         Vertex<T>* getNextVtx () const;
         std::string getName () const;
-        T getData ();
+        T getData () const;
         void addConnection (Vertex<T>*,const size_t& weight);
-        void deleteConenction (EdgeNode*);
+        void deleteConnection (EdgeNode*);
         EdgeNode* findConnection (Vertex<T>*);
     private:
     //Attributes
@@ -237,4 +238,70 @@ void Vertex<T>::EdgeList::clearList () {
     while (!isEmpty()) {
         deleteData (header);
     }
+}
+
+//Vertex class methods
+//Constructors
+template <class T>
+Vertex<T>::Vertex (): nextVtx (nullptr), data(nullptr), edges() {}
+
+template <class T>
+Vertex<T>::Vertex (const std::string& name, const T& data): name(name), data (new T(data)), edges() {
+    if (this -> data == nullptr) {
+        throw Exception ("Not enough memory available in Vertex<T>::Vertex");
+    }
+}
+//Destructor
+template <class T>
+Vertex<T>::~Vertex () {
+    delete data;
+}
+//Getters and setters
+//Setters
+template <class T>
+void Vertex<T>::setData (const T&  data) {
+    this -> data = new T(data);
+    if (this -> data == nullptr) {
+        throw Exception ("Not enough memory available in Vertex<T>::setData");
+    }
+}
+
+template <class T>
+void Vertex<T>::setName (const std::string& name) {
+    this -> name = name;
+}
+
+template <class T>
+void Vertex<T>::setNextVtx (Vertex<T>* nextVtx) {
+    this -> nextVtx = nextVtx;
+}
+//Gettters
+template <class T>
+Vertex<T>* Vertex<T>::getNextVtx () const{
+    return nextVtx;
+}
+
+template <class T>
+std::string Vertex<T>::getName () const {
+    return name;
+}
+
+template  <class T>
+T Vertex<T>::getData () const{
+    return *data;
+}
+
+template <class T>
+void Vertex<T>::addConnection (Vertex<T>* vertex,const size_t& weight) {
+    edges.push(vertex,weight);
+}
+
+template <class T>
+void Vertex<T>::deleteConnection(EdgeNode* edge) {
+    edges.deleteData(edge);
+}
+
+template <class T>
+typename Vertex<T>::EdgeNode* Vertex<T>::findConnection (Vertex<T>* vertex) {
+    return edges.findByName(vertex -> getName());
 }
