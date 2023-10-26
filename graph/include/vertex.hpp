@@ -96,7 +96,7 @@ template <class T>
 Vertex<T>::EdgeNode::EdgeNode (): nxtNode(nullptr), vertex(nullptr), weight(0)  {}
 
 template <class T>
-Vertex<T>::EdgeNode::EdgeNode (const EdgeNode& node): nxtNode(node.nxtNode), vertex(node.vertex), weight(node.weight) {} 
+Vertex<T>::EdgeNode::EdgeNode (const EdgeNode& node): nxtNode(node.nxtNode), vertex(node.vertex), weight(node.weight) {}
 
 template <class T>
 Vertex<T>::EdgeNode::EdgeNode (Vertex<T>* vertex, const size_t& weight, EdgeNode* node): nxtNode(node), vertex(vertex), weight(weight) {}
@@ -141,7 +141,7 @@ Vertex<T>::EdgeList::~EdgeList () {
     clearList();
 }
 
-template <class T> 
+template <class T>
 bool Vertex<T>::EdgeList::isEmpty () const {
     return header == nullptr;
 
@@ -163,7 +163,7 @@ void Vertex<T>::EdgeList::insertData (EdgeNode* edgeNode, Vertex<T>* vertex, con
     if (edgeNode != nullptr and !isValidPos(edgeNode)) throw Exception ("Invalid position in Vertex<T>::EdgeList::insertData");
 
     EdgeNode* newNode = new EdgeNode (vertex,weight);
-    
+
     if (newNode == nullptr) throw Exception("Not enough memory available in Vertex<T>::EdgeList::insertData");
 
     if (edgeNode == nullptr) {
@@ -207,7 +207,7 @@ typename Vertex<T>::EdgeNode* Vertex<T>::EdgeList::getFirstPos () const {
 template <class T>
 typename Vertex<T>::EdgeNode* Vertex<T>::EdgeList::getLastPos () const {
     EdgeNode *aux = header;
-    
+
     while (aux -> getNxtNode() != nullptr) {
         aux = aux -> getNxtNode();
     }
@@ -255,6 +255,7 @@ Vertex<T>::Vertex (const std::string& name, const T& data): name(name), data (ne
 template <class T>
 Vertex<T>::~Vertex () {
     delete data;
+    delete edges;
 }
 //Getters and setters
 //Setters
