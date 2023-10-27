@@ -19,7 +19,8 @@ class Graph {
         void push ();
         void deleteVtx (Vertex<T>*);
 
-        void linkVtx (Vertex<T>*,Vertex<T>*);
+        void linkVtx (Vertex<T>*,Vertex<T>*,const size_t& weight);
+        void linkVtx (Vertex<T>*,const size_t& weight);
         void unlinkVtx (Vertex<T>*,Vertex<T>*);
         void clear ();
     private:
@@ -129,16 +130,21 @@ void Graph<T>::deleteVtx (Vertex<T>* vtx) {
 template <class T>
 void Graph<T>::unlinkVtx (Vertex<T> *vertex1, Vertex<T> *vertex2) {
     if (isValidPos(vertex1) and isValidPos(vertex2)){
-        vertex1 -> deleteConnection(vertex2);
-        vertex2 -> deleteConnection(vertex1);
+        vertex1 -> deleteConnection(vertex1 ->findConnection(vertex2));
+        vertex2 -> deleteConnection(vertex2 ->findConnection(vertex1));
     }
 }
 
 template <class T>
-void Graph<T>::linkVtx (Vertex<T> *vertex1, Vertex<T> *vertex2) {
+void Graph<T>::linkVtx (Vertex<T>* vertex, const size_t& weight) {
+    vertex -> addConnection(vertex,weight);
+}
+
+template <class T>
+void Graph<T>::linkVtx (Vertex<T> *vertex1, Vertex<T> *vertex2,const size_t& weight) {
     if (isValidPos(vertex1) and isValidPos(vertex2)) {
-        vertex1 -> addConnection(vertex2);
-        vertex2 -> addConnection(vertex1);
+        vertex1 -> addConnection(vertex2,weight);
+        vertex2 -> addConnection(vertex1,weight);
     }
 }
 

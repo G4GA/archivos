@@ -7,5 +7,7 @@
 #include "../include/GUI.hpp"
 
 int main () {
+    Graph<Song> mySongs;
+    GUI myGui (mySongs);
     return 0;
 }

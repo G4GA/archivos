@@ -178,12 +178,14 @@ void Vertex<T>::EdgeList::insertData (EdgeNode* edgeNode, Vertex<T>* vertex, con
 //Push method
 template <class T>
 void Vertex<T>::EdgeList::push (Vertex<T>* vertex,const size_t& weight) {
-    insertData(nullptr,vertex,weight);
+    if (findByName(vertex -> getName()) == nullptr) {
+        insertData(nullptr,vertex,weight);
+    }
 }
 
 template <class T>
 void Vertex<T>::EdgeList::deleteData (EdgeNode* delEdge) {
-    if (!isValidPos()) throw Exception ("Invalid position in Vertex<T>::EdgeList::deleteData");
+    if (!isValidPos(delEdge)) throw Exception ("Invalid position in Vertex<T>::EdgeList::deleteData");
 
     if (delEdge == header) {
         header = delEdge -> getNxtNode();
@@ -255,7 +257,7 @@ Vertex<T>::Vertex (const std::string& name, const T& data): name(name), data (ne
 template <class T>
 Vertex<T>::~Vertex () {
     delete data;
-    delete edges;
+    edges.clearList();
 }
 //Getters and setters
 //Setters
