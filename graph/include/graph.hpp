@@ -16,15 +16,15 @@ class Graph {
         Vertex<T>* getLastVtx () const;
         Vertex<T>* getNextVtx (Vertex<T>*) const;
 
-        void push ();
+        void push (const std::string&,const T&);
         void deleteVtx (Vertex<T>*);
 
         void linkVtx (Vertex<T>*,Vertex<T>*,const size_t& weight);
         void linkVtx (Vertex<T>*,const size_t& weight);
         void unlinkVtx (Vertex<T>*,Vertex<T>*);
         void clear ();
-    private:
         void insertVtx (Vertex<T>*,const std::string&,const T&);
+    private:
         bool isValidPos(Vertex<T>*) const;
         Vertex<T>* header;
         class Exception : public std::exception{
@@ -102,6 +102,11 @@ void Graph<T>::insertVtx (Vertex<T>* nodePos, const std::string& name, const T& 
         newVertex -> setNextVtx(nodePos -> getNextVtx());
         nodePos -> setNextVtx(newVertex);
     }
+}
+
+template <class T>
+void Graph<T>::push (const std::string& name,const T& data) {
+    insertVtx(nullptr,name,data);
 }
 
 template <class T>
