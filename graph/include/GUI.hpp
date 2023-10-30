@@ -23,10 +23,15 @@ class GUI {
         void deleteSong (Graph<Song>& songGraph);
         void showConnections (Graph<Song>&songGraph);
         void showSong (Graph<Song>&songGraph);
-        void loadSong (Graph<Song>&songGraph);
-        void writeSong (Graph<Song>&songGraph);
+        void loadGraph (Graph<Song>&songGraph);
+        void writeGraph (Graph<Song>&songGraph);
         void exitProgram (bool& notExit);
-        // std::vector<std::string> splitString (const std::string& input, char delimiter);
+        
+        void printGraph(const Graph<Song>& songGraph);
+        void printAvailableNodes (const Graph<Song>& graph, Vertex<Song>*);
+        void printConnections (Vertex<Song> *node);
+
+        std::vector<std::string> splitString (const std::string& input, char delimiter);
 
     enum Options{
         add_song = 1,

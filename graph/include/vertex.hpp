@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include <format>
+#include <fstream>
 
 template <class T>
 class Vertex {
@@ -12,6 +13,7 @@ class Vertex {
                 EdgeNode ();
                 EdgeNode (const EdgeNode&);
                 EdgeNode (Vertex<T>*, const size_t&, EdgeNode*);
+                EdgeNode (Vertex<T>*, const size_t&);
                 //Getters and setters
                 //Setters
                 void setNxtNode (EdgeNode*);
@@ -25,6 +27,7 @@ class Vertex {
                 EdgeNode* nxtNode;
                 Vertex<T>* vertex;
                 size_t weight;
+                
         };
         class EdgeList {
             public:
@@ -68,6 +71,11 @@ class Vertex {
         void addConnection (Vertex<T>*,const size_t& weight);
         void deleteConnection (EdgeNode*);
         EdgeNode* findConnection (Vertex<T>*);
+        EdgeNode* getfirstConnection ();
+        template<class U>
+        friend std::ostream& operator << (std::ostream&,const Vertex<U>&);
+        template<class U>
+        friend std::istream& operator >> (std::istream&, Vertex<U>&);
     private:
     //Attributes
     Vertex<T>* nextVtx;
@@ -87,7 +95,6 @@ class Vertex {
                             return msg.c_str ();
                         }
                 };
-
 };
 //EdgeNode class method definitions
 
@@ -100,6 +107,9 @@ Vertex<T>::EdgeNode::EdgeNode (const EdgeNode& node): nxtNode(node.nxtNode), ver
 
 template <class T>
 Vertex<T>::EdgeNode::EdgeNode (Vertex<T>* vertex, const size_t& weight, EdgeNode* node): nxtNode(node), vertex(vertex), weight(weight) {}
+
+template <class T>
+Vertex<T>::EdgeNode::EdgeNode (Vertex<T>* vertex, const size_t& weight): vertex(vertex), weight(weight) {}
 //Getters and setters
 //Setters
 template <class T>
@@ -162,7 +172,7 @@ template <class T>
 void Vertex<T>::EdgeList::insertData (EdgeNode* edgeNode, Vertex<T>* vertex, const size_t& weight) {
     if (edgeNode != nullptr and !isValidPos(edgeNode)) throw Exception ("Invalid position in Vertex<T>::EdgeList::insertData");
 
-    EdgeNode* newNode = new EdgeNode (vertex,weight);
+    EdgeNode* newNode = new EdgeNode(vertex,weight);
 
     if (newNode == nullptr) throw Exception("Not enough memory available in Vertex<T>::EdgeList::insertData");
 
@@ -222,7 +232,6 @@ typename Vertex<T>::EdgeNode* Vertex<T>::EdgeList::getNextPos (EdgeNode* edgeNod
     return edgeNode -> getNxtNode();
 }
 
-//Pending
 template <class T>
 typename Vertex<T>::EdgeNode* Vertex<T>::EdgeList::findByName (const std::string& name) const {
     EdgeNode* returnNode = header;
@@ -307,4 +316,35 @@ void Vertex<T>::deleteConnection(EdgeNode* edge) {
 template <class T>
 typename Vertex<T>::EdgeNode* Vertex<T>::findConnection (Vertex<T>* vertex) {
     return edges.findByName(vertex -> getName());
+}
+
+template <class T>
+typename Vertex<T>::EdgeNode* Vertex<T>::getfirstConnection() {
+    return edges.getFirstPos();
+}
+
+template <class T>
+std::ostream& operator << (std::ostream& os,const Vertex<T>& vertex) {
+    T buffer = vertex.getData();
+    std::string name = vertex.getName();    
+
+    os << name << '|' << buffer << '\n';
+
+    return os;
+}
+
+
+template <class T>
+std::istream& operator >> (std::istream& is, Vertex<T>& vertex) {
+    T data;
+    std::string name,
+                buffer;
+    std::getline(is,buffer,'|');
+    if (buffer.size()) {
+        vertex.setName(buffer);
+        is >> data;
+        vertex.setData(data);
+        std::getline(is,buffer,'\n');
+    }
+    return is;
 }

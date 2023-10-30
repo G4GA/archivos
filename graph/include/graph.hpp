@@ -15,6 +15,7 @@ class Graph {
         Vertex<T>* getFirstVtx () const;
         Vertex<T>* getLastVtx () const;
         Vertex<T>* getNextVtx (Vertex<T>*) const;
+        Vertex<T>* getByName (const std::string&) const;
 
         void push (const std::string&,const T&);
         void deleteVtx (Vertex<T>*);
@@ -22,8 +23,11 @@ class Graph {
         void linkVtx (Vertex<T>*,Vertex<T>*,const size_t& weight);
         void linkVtx (Vertex<T>*,const size_t& weight);
         void unlinkVtx (Vertex<T>*,Vertex<T>*);
+        void unlinkVtx (Vertex<T>*);
         void clear ();
         void insertVtx (Vertex<T>*,const std::string&,const T&);
+        int writeFile(const std::string&);
+        int loadFile (const std::string&);
     private:
         bool isValidPos(Vertex<T>*) const;
         Vertex<T>* header;
@@ -72,6 +76,15 @@ Vertex<T>* Graph<T>::getLastVtx () const {
 template <class T>
 Vertex<T>* Graph<T>::getNextVtx(Vertex<T>* vertex) const {
     return vertex -> getNextVtx();
+}
+
+template <class T>
+Vertex<T>* Graph<T>::getByName (const std::string& name) const {
+    Vertex<T> *i = getFirstVtx();
+    while (i != nullptr and name != i -> getName()) {
+        i = i -> getNextVtx();
+    }
+    return i;
 }
 
 template <class T>
@@ -141,6 +154,13 @@ void Graph<T>::unlinkVtx (Vertex<T> *vertex1, Vertex<T> *vertex2) {
 }
 
 template <class T>
+void Graph<T>::unlinkVtx (Vertex<T> *vertex1) {
+    if (isValidPos(vertex1)){
+        vertex1 -> deleteConnection(vertex1 ->findConnection(vertex1));
+    }
+}
+
+template <class T>
 void Graph<T>::linkVtx (Vertex<T>* vertex, const size_t& weight) {
     vertex -> addConnection(vertex,weight);
 }
@@ -161,3 +181,89 @@ void Graph<T>::clear () {
     delete header;
     header = nullptr;
 }
+
+template <class T>
+int Graph<T>::writeFile(const std::string& path) {
+    int returnCode = 0;
+    Vertex<T> *i = getFirstVtx(),
+              *j;
+    typename Vertex<T>::EdgeNode *aux;
+    std::fstream file (path, std::ios::out);
+    if (file.is_open()) {
+        while (i != nullptr) {
+            file << *i;
+            i = i -> getNextVtx();
+        }
+        i = getFirstVtx();
+        while (i != nullptr) {
+            j = i;
+            while (j != nullptr) {
+                if (j -> findConnection(i) != nullptr) {
+                    aux = j -> findConnection(i);
+                    file << i -> getName() << '|' << j -> getName() << '|' << aux -> getWeight() << "*";
+                }
+                j = j -> getNextVtx();
+            }
+            i = i -> getNextVtx();
+        }
+    }
+    else {
+        returnCode = -1;
+    }
+    file.close();
+    return returnCode;
+}
+
+template <class T>
+int Graph<T>::loadFile (const std::string& path) {
+    std::string buffer_str,
+                node1_str,
+                node2_str,
+                weight_str,edge_str;
+    Vertex<T> buffer_vtx,*vtx2,*vtx1;
+    Song data;
+    int returnCode = 0;
+    std::string::size_type pos = 0;
+    std::fstream file (path, std::ios::in);
+    
+    if (file.is_open ()){
+        
+            while (getline(file,buffer_str,'\n')) {
+                std::istringstream strm(buffer_str);
+                try {
+                strm >> buffer_vtx;
+                strm.clear();
+                data = buffer_vtx.getData();
+                push(buffer_vtx.getName(),data);
+                }
+                catch (std::invalid_argument) {
+                        break;
+                    }   
+                }
+        std::string field_del("|"),object_del("*");
+        std::string token;
+        while ((pos = buffer_str.find(object_del)) != std::string::npos) {
+            token = buffer_str.substr(0,pos+1);
+            buffer_str.erase(0,pos + 1);
+            
+            pos = token.find(field_del,0);
+            node1_str = token.substr(0,pos);
+            token.erase(0,pos+1);
+            
+            pos = token.find(field_del,0);
+            node2_str = token.substr(0,pos);
+            token.erase(0,pos+1);
+
+            pos = token.find(object_del,0);
+            weight_str = token.substr(0,pos);
+            token.erase(0,pos+1);
+            linkVtx(getByName(node1_str),getByName(node2_str),std::stoi(weight_str));
+        }
+    }
+    else {
+        returnCode = -1;
+    }
+    file.close();
+    return returnCode;
+}
+
